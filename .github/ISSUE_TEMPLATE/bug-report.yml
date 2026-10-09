@@ -1,0 +1,45 @@
+name: Report a problem
+description: Tell us about a bug or another problem in DragonHaven.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve DragonHaven. Please do not include passwords or private account information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we reproduce it?
+      description: List the steps that caused the problem.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: DragonHaven version
+      description: You can find this on the About screen.
+      placeholder: 0.06.29 (10122)
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      placeholder: Samsung Galaxy S23, Android 16
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional information
+      description: Add screenshots or other useful details. Remove personal information first.
